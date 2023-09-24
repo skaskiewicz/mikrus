@@ -1,0 +1,24 @@
+# Konfiguracja parametrów tworzenia kopii zapasowej
+
+# Lista katalogów, których kopie mają zostać utworzone wraz z ich nazwami.
+# Podaj pełne ścieżki do katalogów oddzielone przecinkami, a nazwy jakie mają przyjąć docelowe pliki zip podaj po "|".
+BACKUP_DIRS: /sciezka/do/katalogu|katalogA,/sciezka/do/katalogu|katalogB
+
+# Lista katalogów, które mają zostać wyłączone z archiwizacji.
+# Podaj pełne ścieżki do katalogów oddzielone przecinkami.
+# Jeśli pusta, to brak pomijania.
+EXCLUDE_DIRS: /sciezka/do/katalogu/wykluczony1,/sciezka/do/katalogu/wykluczony2
+
+# Lista rozszerzeń plików, które mają zostać wyłączone z archiwizacji.
+# Podaj rozszerzenia plików oddzielone przecinkami.
+# Nie podawaj kropki przed rozszerzeniem.
+# Jeśli pusta, to brak pomijania.
+EXCLUDE_EXT: log,tmp
+
+# Hasło do zabezpieczenia archiwum.
+# Jeśli puste, to brak hasła.
+ZIP_PASSWORD: haslo
+
+# Ścieżka do katalogu, w którym zostanie umieszczona kopia zapasowa.
+# Katalog docelowy musi istnieć i być zapisywalny.
+DESTINATION_DIR: /sciezka/do/katalogu/kopii-zapasowej

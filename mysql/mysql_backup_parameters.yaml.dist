@@ -1,0 +1,15 @@
+# Plik konfiguracyjny dla skryptu tworzenia kopii zapasowych bazy danych MySQL
+
+# Ustawienia bazy danych MySQL
+DB_HOST: localhost        # Adres hosta bazy danych MySQL
+DB_PORT: 3306               # Numer portu do połączenia z bazą danych MySQL
+DB_USER: user            # Nazwa użytkownika do logowania do bazy danych MySQL
+DB_PASSWORD: password    # Hasło użytkownika do logowania do bazy danych MySQL
+
+# Ustawienia plików kopii zapasowych
+BACKUP_DIR: /sciezka/do/katalogu/kopii/zapasowych   # Katalog, w którym będą przechowywane kopie zapasowe. Ścieżka bezwzględna. Każda baza zostanie utworzona w podkatalogu
+SKIP_DATABASES: database1,database2                 # Lista baz danych, które mają być pominięte przy tworzeniu kopii zapasowych, oddzielone przecinkami
+FILE_PASS: password123                              # Hasło używane do zaszyfrowania plików kopii zapasowych
+
+# Ustawienia protokołu
+PROTOCOL: tcp                                       # Protokół używany do połączenia z bazą danych MySQL (domyślnie tcp, możliwe wartości: tcp lub socket)

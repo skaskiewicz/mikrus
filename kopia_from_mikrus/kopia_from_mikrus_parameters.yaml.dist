@@ -1,0 +1,51 @@
+#bezwzględna ścieżka do klucza prywatnego, używanego na maszynie zdalnej
+PRIVATE_KEY: /ścieżka/do/klucza/prywatnego
+
+#nazwa użytkownika ssh na maszynie zdalnej
+SSH_USERNAME: nazwa_użytkownika
+
+#adres maszyny zdalnej
+REMOTE_ADDRESS: adres_zdalnej_maszyny
+
+#port ssh maszyny zdalnej
+REMOTE_PORT: numer_portu
+
+#bezwzględna ścieżka do katalogu ze snapshotami na mikrusie
+SNAPSHOT_DIRECTORY: /ścieżka/do/katalogu/ze/snapshotami
+
+#początkowy wzorzec nazwy plików snapshotów na mikrusie
+SNAPSHOT_PATTERN: wzorzec_plików_snapshota
+
+#bezwzględna ścieżka z katalogiem do kopiowania innych plików z mikrusa. są one kopiowane rekursywnie, w głąb ścieżek
+OTHER_FILES_DIRECTORY: /ścieżka/do/katalogu/z/innymi/plikami
+
+#bezwzględna scieżka do katalogu docelowego na maszynie lokalnej do kopiowania plików. będą tutaj kopiowane snapshoty i pozostałe pliki wraz ze ścieżkami 1:1
+#np. katalog /backup/ a w nim pliki snapshotów dopasowane wg. wzorca i dalej w podkatalogach inne pliki backupów, np. /backup/1, /backup/2
+#jeśli znajdzie snapshoty w katalogu /backup/ to w takiej formie zostaną przekopiowane, wpołożeniu 1:1
+DESTINATION_DIRECTORY: /ścieżka/do/katalogu/docelowego
+
+#bezwzględna ścieżka do pliku logu na maszynie lokalnej
+LOG_FILE: /ścieżka/do/pliku/logu
+
+#bezwzględna ścieżka do pliku logu na maszynie zdalnej
+REMOTE_LOG_PATH: /ścieżka/do/pliku/logu
+
+#liczba plików snapshot do pozostawienia
+NUMBER_OF_SNAPSHOTS_TO_KEEP: 5
+
+#jednostka do oznaczenia parametru powyżej
+#dostępne opcje:
+# 1. days - wybiera pliki starsze niż określona ilosć dni
+# 2. hours - wybiera pliki starsze niż określona ilosć godzin
+# 3. files - wybiera pliki starsze niż określona ilość
+UNIT_NUMBER_OF_SNAPSHOTS_TO_KEEP: files
+
+#liczba pozostałych plików do pozostawienia
+NUMBER_OF_OTHER_FILES_TO_KEEP: 5
+
+#jednostka do oznaczenia parametru powyżej
+#dostępne opcje:
+# 1. days - wybiera pliki starsze niż określona ilosć dni
+# 2. hours - wybiera pliki starsze niż określona ilosć godzin
+# 3. files - wybiera pliki starsze niż określona ilość
+UNIT_NUMBER_OF_OTHER_FILES_TO_KEEP: files

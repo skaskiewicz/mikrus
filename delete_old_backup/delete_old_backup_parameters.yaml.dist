@@ -1,0 +1,24 @@
+# Konfiguracja parametrów kasowania plików backupu
+
+# Wybór metody do spoosbu wybrania plików do skasowania.
+# Dostępne opcje:
+# 1. files - wybiera pliki starsze niż określona ilość
+# 2. days - wybiera pliki starsze niż określona ilosć dni
+# 3. hours - wybiera pliki starsze niż określona ilosć godzin
+RECENT_DATES_OR_FILES: files
+
+# Ilość plików do skasowania. Jest to powiązane z wyborem metody.
+# Dla metody files jest to ilość plików, które pozostaną od najnowszego.
+# Dla metody days jest to ilość dni, które pozostaną od najnowszego.
+# Dla metody hours jest to ilość godzin, które pozostaną od najnowszego.
+NUMBER: 30
+
+# Ścieżka do katalogu, który ma być czyszczony.
+# Można podać kilka ścieżek, oddzielając je przecinkiem.
+DIRECTORY_TO_CLEANUP: /home/backup,/home/backup2
+
+# Ścieżka do pliku kontrolnego przekazywanego ze skryptu kopia_from_mikrus.sh
+# Plik kontrolny nazywa się "ok.txt" i jes tworzony automatycznie.
+# Gdy puste, będzie pomijane.
+# Gdy pełne, to w przypadku nieznalezienia wskazanego pliku, skrypt nie zostanie wykonany. Pliki nie zostaną skasowane.
+PATH_TO_CONTROL_FILE: /home/user
