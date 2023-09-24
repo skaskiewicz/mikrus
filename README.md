@@ -1,4 +1,3 @@
-
 # Mikrus
 
 Repozytorium zawiera skrypty, które wykorzystuję do obsługi generowania i zarządzania kopiami bezpieczeństwa. Nie są specjalnie wyszukane ale spełniają swoje zadanie.
@@ -32,11 +31,11 @@ PROTOCOL: socket
 
 przykład wywołania skryptu wraz z logowaniem do pliku
 ```bash
-/home/user/git/mikrus/mysql/mysql_backup.sh /home/user/git/mikrus/mysql/mysql_backup_parameters.yaml
- >> /var/log/mysql_backup.log 2>&1
+/home/user/git/mikrus/mysql/mysql_backup.sh /home/user/git/mikrus/mysql/mysql_backup_parameters.yaml >> /var/log/mysql_backup.log 2>&1
 ```
 
 
 ## License
 
 [GNU General Public License v3.0](https://github.com/skaskiewicz/mikrus/blob/master/LICENSE)
+
